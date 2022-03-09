@@ -1,0 +1,214 @@
+
+
+.Modle3 {
+     
+}
+
+
+ 
+.RightMenu1-h1 {
+    color: white;
+    font-size: 16px;
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.CustomMenu {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    opacity: 0.9;
+}
+
+.Model3-Head-1 {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/model3.avif");
+}
+
+
+
+
+.Model3-Head-1-h1 {
+    font-size: 40px;
+    font-weight: 500;
+    color: white;
+    padding-left: 600px;
+    padding-top: 95px;
+    cursor: pointer;
+}
+
+.Model3-Head-1-button {
+    display: flex;
+    flex-direction: column;
+}
+
+.Model3-Head-1-button-sidebar {
+    padding-top: 30px;
+    position: fixed;
+}
+
+.Model3-Head-1-button-sidebar2 {
+    border-left: 1px solid white;
+    margin-left: 12px;
+    padding-left: 12px;
+    cursor: pointer;
+    width: 100px;
+}
+
+
+.Model3-Head-1-button-sidebar1 {
+    height: 22px;
+    width: 100px;
+    color: white;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 10px;
+    cursor: pointer;
+    font-weight: 700;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+}
+
+.Model3-Head-1-button-sidebar1:hover {
+    opacity: 1;
+}
+
+.Model3-Head-1-button-box1 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 290px;
+}
+
+.Model3-Head-1-button-box1-b {
+    display: flex;
+    flex-direction: row;
+    margin-left: 385px;
+    margin-top: 80px;
+}
+
+.Model3-Head-1-button-box1-b-b {
+    display: flex;
+    flex-direction: column;
+    padding-right: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Model3-Head-1-button-box1-b-b-s {
+    display: flex;
+    flex-direction: row;
+}
+
+.Model3-Head-1-button-box1-svg {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    padding-right: 6px;
+    justify-content: center;
+}
+
+.Model3-Head-1-button-box1-h1 {
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+}
+
+.Model3-Head-1-button-box1-b-b-p{
+    color: white;
+    font-size: 14px;
+}
+
+.Model3-Head-1-button-box1-btn {
+    margin-top: 16px;
+    width: 170px;
+    height: 40px;
+    border: 3px solid white;
+    border-radius: 22px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+.Model3-Head-1-button-box1-btn:hover {
+    color: black;
+    background-color: white;
+}
+
+.ChatIcon {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: white;
+    display: flex;
+    border: 1px solid #888888;
+    box-shadow:  0 0 10px  rgba(0,0,0,0.6);
+    -moz-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
+    -o-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 900px;
+    margin-top: 16px;
+    position: fixed;
+}
+
+.Chat {
+    width: 30px;
+    height: 30px;
+}
+
+.Model3-Head-1-button-2 {
+    animation : animateDown infinite 1.5s;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.Model3-Head-1-button-arrow {
+    height: 40px;
+    cursor: pointer;
+}
+
+/* Safety */
+
+
+.Model3-1{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+} 
+
+.Model3-1-text-top {
+    margin-top: 35px;
+    margin-left: 50px;
+}
+
+.Model3-1-text-top-p {
+    font-size: 20px;
+}
+
+.Model3-1-text-top-h1 {
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.Model3-1-text-middle {
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.Model3-1-img {
+    width: 60vw;
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/b7e5f13a-e8f8-4428-b29e-b2ba6cf5220b/bvlatuR/std/1920x1080/MS-Safety-Hero-Desktop");
+}

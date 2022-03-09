@@ -1,0 +1,1244 @@
+*{
+    box-sizing: border-box;
+    font-family: "Rubik",sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #393c41;
+}
+
+.App {
+    align-items: center;
+}
+body{
+    width: 100%;
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+  }
+  
+  a {
+    text-decoration: none;
+  }
+
+ 
+@keyframes animateDown {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(5px);
+    }
+    60% {
+      transform: translateY(3px);
+    }
+  }
+
+ /* .Fade:hover {
+    animation-name: FadeIn;
+    animation-duration: 2s;
+    transition-timing-function: linear;
+  }
+  
+  @keyframes FadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @-moz-keyframes FadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @-webkit-keyframes FadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @-o-keyframes FadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @-ms-keyframes FadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  } */
+
+.modelsHead {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("/images/model-s.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 70px;
+    padding-bottom: 25px;
+} 
+
+.ModelsHeader {
+  text-align: center;
+  padding-top: 55px;
+}
+
+.ModelsHeader h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+  color: rgb(26, 25, 25);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.ModelsHeader p{
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.ModelsBottom {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 55px;
+}
+
+.ModelsText {
+  font-size: 30px;
+  font-weight: 500;
+  color: white;
+}
+
+.ModelsText1 {
+  font-size: 25px;
+  font-weight: 600;
+  color: white;
+  padding-left: 5px;
+}
+
+.ModelsTextp {
+  font-size: 14px;
+  color: white;
+}
+
+.messageIcon {
+  right: 0;
+  bottom: 0;
+}
+
+/* 
+.ModelButton {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 170px;
+  height: 40px;
+  border: 3px solid white;
+  border-radius: 22px;
+}
+.ModelButton:hover {
+  background-color: white;
+  opacity: 0.8;
+} */
+.ModelButtonText {
+  padding: 9px 40px;
+  text-align: center;
+  align-items: center;
+  border: 3px solid white;
+  border-radius: 22px;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  transition: all 0.4s ease-in-out;
+}
+.ModelButtonText:hover {
+  background-color: white;
+  color: black;
+}
+
+.chathead {
+  margin-left: 1150px;
+  margin-bottom: 2px;
+  /* position: relative; */
+}
+.chat {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  
+}
+
+.chatIcon {
+  text-align: center;
+  padding: 10px 10px;
+  border-radius: 100%;
+  background-color: white;
+  cursor: pointer;
+  position: fixed;
+  border: solid 1px #555;
+  background-color: #eed;
+  box-shadow:  0 0 10px  rgba(0,0,0,0.6);
+  -moz-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
+  -webkit-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
+  -o-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
+}
+
+.ModelsHead2 {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("/images/new-interior.jpg");
+}
+
+.ModelsHead2H1 {
+  padding-top: 15px;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 600;
+  color: white;
+}
+
+
+.BlackSpade {
+   width: 100vw;
+   height: 20vh;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-color: black;
+}
+.ModelsHead3 {
+    width: 100vw;
+    height: 120vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ModelsHead3Image {
+  width: 1150px;
+  height: 550px;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/images/game.jpg");
+}
+
+.ImageSlider{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 250px 50px;
+}
+
+.ImageSliderBorder {
+  padding: 2px 2px;
+  background-color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+.ImageSliderIcon {
+  width: 35px;
+  height: 35px;
+}
+
+.ModelsHead3Desc {
+  padding-top: 30px;
+}
+
+.Models-Head3-h1 {
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.Models-Head3-p {
+  color: white;
+  padding-top: 10px;
+}
+
+.Models-Head-4 {
+    width: 100vw;
+    height: 200vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+    padding-right: 40px;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.Modes-Head-4-colums{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.Models-Head-4-colums1 {
+  width: 524px;
+  height: 291px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.Models-Head-4-Row {
+  width: 524px;
+  height: 291px;
+  display: flex;
+  align-items: center;
+}
+
+.Models-head-4-Row-Text {
+  /* display: flex;
+  flex-direction: column; */
+  text-align: start;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Models-head-4-Row-h1 {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.Models-head-4-Row-p {
+  padding-top: 5px;
+  color: rgb(226, 218, 218);
+  font-size: 16px;
+}
+
+.Models-head-4-Row-Text-2 {
+  text-align: start;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 100px;
+}
+
+.Models-Head-4-Row-h1-2 {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.Models-Head-4-Row-p-2 {
+  padding-top: 5px;
+  color: rgb(226, 218, 218);
+  font-size: 16px;
+}
+
+.Models-Head-5 {
+  width: auto;
+  height: 80vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/images/ModelsG.jpg");  
+}
+
+.Models-Head-5-Text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 400px;
+  gap: 80px;
+  text-align: center;
+  align-items: center;
+}
+
+.Models-Head-5-Text-box {
+  text-align: center;
+}
+
+.Models-Head-5-Text-box-h1 {
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.Models-Head-5-Text-span {
+  color: white;
+  padding-left: 4px;
+}
+
+.Models-Head-5-p {
+  color: white;
+}
+
+.Modesl-Head-6 {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 33vh;
+  background-color: white;
+}
+
+.Models-head-6-box {
+  padding-left: 200px;
+  width: 650px;
+  height: 40px;
+  padding-top: 40px;
+}
+
+
+.Models-Head-6-p{
+  font-size: 18px;
+}
+
+.Models-Head-6-h1 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.Models-Head-6-Button {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: black;
+  padding: 8px 30px;
+  border: 3px solid black;
+  border-radius: 20px;
+  margin-top: 8px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+
+.Models-Head-6-Button:hover{
+  background-color: black;
+  color: white;
+}
+
+.Models-Head-6-Box2 {
+  display: flex;
+}
+
+.Models-Head-6-Box2-p {
+  display: flex;
+  padding-top: 50px;
+}
+
+.Models-Head-7 {
+  width: 100vw;
+  height: 150vh;
+  background-color: rgb(245, 244, 241);
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.Models-Head-7-box1 {
+  display: flex;
+  flex-direction: row;
+  padding-left: 230px;
+  padding-top: 35px;
+  padding-bottom: 20px;
+}
+
+.Models-Head-7-box1-h1{
+  font-size: 27px;
+  font-weight: 600;
+}
+
+.Models-Head-7-box1-p {
+  padding-top: 10px;
+  padding-left: 15px;
+}
+
+.Models-Head-7-box2 {
+  padding-left: 170px;
+  padding-top: 20px;
+}
+
+.Models-Head-7-box2-image {
+  width: 78vw;
+  height: 70vh;
+  background-size: cover;
+  background-image: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/3da49427-d22a-4fe1-bc36-3653dc426dfd/bvlatuR/std/1920x900/Model-S-Performance-Tri-Motor-Desktop");
+}
+
+.Models-Head-7-box3 {
+  display: flex;
+  flex-direction: row;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.Models-Head-7-box3-box1 {
+  padding: 20px;
+  color: rgba(0,0,0,0.2);
+  border-top: 3px solid rgba(0,0,0,0.5);
+  border-left: 3px solid rgba(252, 250, 250, 0);
+  border-right: 3px solid rgba(252, 248, 248, 0);
+  border-bottom: 3px solid rgba(252, 248, 248, 0);
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.Models-Head-7-box3-box1:hover{
+  /* background-color: #ff8177; */
+    /* background-image: linear-gradient(to top, #da1c4b 0%, #ffb199 100%); */
+    /* background-image: linear-gradient(-225deg, #09bbe7 0%, #1410f0 29%, #ff1361 67%, #fff800 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    border: 3px solid black;
+    transition: all 0.8s ease-in-out ; */
+    border-top: 3px solid rgba(0,0,0,1);
+    border-left: 3px solid rgba(0,0,0,1);
+    border-right: 3px solid rgba(0,0,0,1);
+    border-bottom: 3px solid rgba(0,0,0,1);
+    opacity: 1;
+}
+
+.Models-Head-7-box3-box2 {
+  padding: 20px;
+  color: rgba(0,0,0,0.2);
+  border-top: 3px solid rgba(0,0,0,0.5);
+  border-left: 3px solid rgba(252, 250, 250, 0);
+  border-right: 3px solid rgba(252, 248, 248, 0);
+  border-bottom: 3px solid rgba(252, 248, 248, 0);
+  cursor: pointer;
+  opacity: 0.7;
+  margin-left: 20px;
+}
+
+.Models-Head-7-box3-box2:hover{
+  border-top: 3px solid rgba(0,0,0,1);
+  border-left: 3px solid rgba(0,0,0,1);
+  border-right: 3px solid rgba(0,0,0,1);
+  border-bottom: 3px solid rgba(0,0,0,1);
+  opacity: 1;
+}
+
+.Models-Head-box3-box1-class {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding-top: 35px;
+}
+
+.Models-Head-7-box3-box1-h1 {
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+.Models-Head-7-box3-box1-p {
+  font-size: 14px;
+}
+.Models-Head-box3-box1-class-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding-top: 12px;
+}
+
+.Models-Head-box3-box1-class-h1 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.Models-Head-7-box3-box1-h1:hover {
+  /* background-color: #ff8177; */
+  /* background-image: linear-gradient(to top, #da1c4b 0%, #ffb199 100%); */
+  /* background-image: linear-gradient(-225deg, #09bbe7 0%, #1410f0 29%, #ff1361 67%, #fff800 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent; */
+  /* color: black; */
+}
+
+.Models-Head-7-p {
+  display: flex;
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 25px;
+  font-weight: bold;
+  opacity: 0.8;
+}
+
+.Models-Head-5-2 {
+  width: auto;
+  height: 80vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/06af56e3-91c4-4bad-8d2e-0a24f64ec2a8/bvlatuR/std/2880x1800/MS-Exterior-Hero-Desktop");
+}
+
+.Models-Head-8 {
+  width: 100vw;
+  height: 150vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: black;
+  padding-right: 40px;
+  padding-left: 40px;
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.Modes-Head-8-colums{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.Models-Head-8-colums1 {
+  width: 524px;
+  height: 291px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.Models-Head-9 {
+  width: 70.8vw;
+  height: 80vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/b6761e24-0f64-483a-b868-50c5bab803bd/bvlatuR/std/2880x1800/MS-Range-Hero-Desktop");
+}
+
+.Models-Head-9-Head {
+  display: flex;
+  flex-direction: row;
+}
+
+.Models-Head-9-box2 {
+  padding-left: 20px;
+  padding-top: 30px;
+}
+
+.Models-Head-9-box2-p {
+  font-size: 19px;
+}
+
+.Models-Head-9-box2-h1 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.Models-Head-box2-p-p {
+  margin-top: 6px;
+  font-size: 15px;
+  margin-bottom: 220px;
+}
+
+.Models-Head-9-box2-button {
+  padding: 8px 30px;
+  text-transform: uppercase;
+  border: 3px solid black;
+  font-size: 12px;
+  border-radius: 22px;
+  transition: all 0.4s ease-in-out;
+}
+
+.Models-Head-9-box2-button:hover {
+  color: white;
+  background-color: black;
+}
+
+.Models-Head-10 {
+  width: 100vw;
+  height: 120vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Models-Head-10-Image-Field {
+  width: 85vw;
+  height: 75vh;
+  margin-top: 30px;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/8ff9904f-2c9a-4d65-bdf3-10064c8de7a3/bvlatuR/std/0x0/map_san_jose_bg@2x");
+}
+
+.Models-Head-Text-Field-h1 {
+  font-size: 30px;
+  padding-top: 50px;
+}
+
+.Models-Head-10-Futter-Field {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  
+}
+
+
+.Models-Head-10-Futter-Field-1 {
+  font-size: 20px;
+  margin-right: 25px;
+  border-top: 3px solid rgba(0,0,0,0.5);
+  border-bottom: 3px solid rgba(0,0,0,0.0);
+  border-left: 3px solid rgba(0,0,0,0.0);
+  border-right: 3px solid rgba(0,0,0,0.0);
+  padding: 25px 25px;
+  cursor: pointer;
+}
+.Models-Head-10-Futter-Field-1:hover{
+  border: 3px solid black;
+  
+}
+
+.Models-Head-10-Futter-field-h2 {
+  padding-top: 30px;
+}
+
+.Models-Head-10-Futter-Field-Button {
+  padding: 7px 30px;
+  border: 3px solid black;
+  border-radius: 22px;
+  cursor: pointer;
+}
+
+.Models-Head-10-Futter-Field-Button-btn {
+  font-size: 12px;
+  text-transform: uppercase;
+  transition: all 0.4s ease-in-out;
+}
+
+.Models-Head-10-Futter-Field-Button:hover {
+  color: white;
+  background-color: black;
+}
+
+.Models-Head-11 {
+  display: flex;
+  flex-direction: row;
+  right: 0;
+  justify-content: space-between;
+}
+
+.Models-Head-11-Text-Field{
+  padding-left: 55px;
+  padding-top: 80px;
+}
+
+.Models-Head-11-Text-Field-h2 {
+  font-size: 20px;
+}
+
+.Models-Head-11-Text-Field-h1 {
+  padding-top: 1px;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.Models-Head-11-Text-Field-p {
+  font-size: 15px;
+  padding-top: 50px;
+}
+
+.Models-Head-11-Text-Field-btn {
+  padding: 8px 30px;
+  border: 3px solid black;
+  border-radius: 22px;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-top: 160px;
+  transition: all 0.4s ease-in-out;
+}
+
+.Models-Head-11-Text-Field-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.Models-Head-11-Image-Field {
+  width: 55vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  /* position: relative; */
+  background-image: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/b7e5f13a-e8f8-4428-b29e-b2ba6cf5220b/bvlatuR/std/1920x1080/MS-Safety-Hero-Desktop");
+}
+
+.Models-Head-11-Image-Field-line1 {
+  width: 160px;
+  height: 130px;
+  margin-left: 360px;
+  margin-top: 50px;
+  border-left: 3px solid black;
+  position: absolute;
+}
+
+.Models-Head-11-Image-Field-line1-p {
+  font-size: 14px;
+  padding-left: 5px;
+}
+
+.Models-Head-11-Image-Field-line2 {
+  width: 200px;
+  height: 240px;
+  margin-left: 100px;
+  margin-top: 120px;
+  border-left: 3px solid black;
+  position: absolute;
+}
+
+.Models-Head11-Image-Field-line2-p {
+  font-size: 14px;
+  padding-left: 5px;
+}
+
+.Models-Head-11-Image-Field-line3 {
+  width: 160px;
+  height: 120px;
+  margin-left: 400px;
+  margin-top: 410px;
+  border-left: 3px solid black;
+  position: absolute;
+}
+
+.Models-Head-11-Image-Field-line3-p {
+  font-size: 14px;
+  padding-left: 5px;
+  padding-top: 100px;
+}
+
+.Models-Head-12 {
+  width: 100vw;
+  height: 65vh;
+  background-size: cover;
+  background-position: center;
+  /* background-repeat: no-repeat; */
+  background-image: url("/images/tesla.gif");
+}
+
+
+.Models-Head-12-Text-Container {
+  padding-top: 50px;
+  padding-left: 160px;
+  justify-content: space-between;
+}
+
+
+.Models-Head-12-Text-Container-box1 {
+  padding-bottom: 15px;
+}
+
+Models-Head-12-Text-Container-box1-p-1 {
+   font-size: 12px;
+}
+
+.Models-Head-12-Text-Container-box-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.Models-Head-12-Text-Container-box-box-h1 {
+  padding: 6px 8px;
+  border: 2px solid black;
+  border-radius: 25px;
+}
+
+.Models-Head-12-Text-Container-box1-h1 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.Models-Head-12-Text-Container-box1-p {
+  font-size: 14px;
+}
+
+.Models-Head-12-Text-Container-box-box-p {
+  font-size: 13px;
+  font-weight: bold;
+  padding-left: 8px;
+}
+
+.Models-Head-13 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.Models-Head-13-left {
+  margin-right: 100px;
+}
+
+.Models-Head-13-left-p {
+  font-size: 18px;
+}
+
+.Models-Head-13-left-h1 {
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+
+.Models-Head-13-left-btn {
+  padding: 8px 30px;
+  border: 3px solid black;
+  border-radius: 22px;
+  font-size: 12px;
+  text-transform: uppercase;
+  transition: all 0.4s ease-in-out;
+}
+
+.Models-Head-13-left-btn:hover {
+  color: white;
+  background-color: black;
+}
+
+.Models-Head-13-right-p {
+  font-size: 15px;
+}
+
+.Models-Head-14 {
+  width: 100vw;
+  height: 160vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.Models-Head-14-fea-h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.Models-Head-14-fea-p {
+  font-size: 16px;
+  padding-top: 5px;
+}
+
+
+.Models-Head-14-gif {
+  width: 80vw;
+  height: 70%;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/images/stesla.gif");
+}
+
+.Models-Head-14-box {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.Models-Head-14-box-nav {
+  margin-right: 25px;
+  width: 180px;
+  height: 150px;
+  border-top: 3px solid rgba(0,0,0,0.6);
+  border-left: 3px solid rgba(0,0,0,0.0);
+  border-right: 3px solid rgba(0,0,0,0.0);
+  border-bottom: 3px solid rgba(0,0,0,0.0);
+  cursor: pointer;
+}
+
+.Models-Head-14-box-nav:hover {
+  border-top: 3px solid rgba(0,0,0,1);
+  border-left: 3px solid rgba(0,0,0,1);
+  border-right: 3px solid rgba(0,0,0,1);
+  border-bottom: 3px solid rgba(0,0,0,1);
+  color: black;
+}
+
+.Models-Head-14-box-nav-h1 {
+  font-size: 18px;
+  padding-left: 15px;
+  padding-top: 10px;
+}
+
+.Models-Head-14-box-nav-p {
+  font-size: 13px;
+  padding-left: 15px;
+  padding-top: 20px;
+} 
+
+.Models-Head-15 {
+  width: 100vw;
+  height: 95vh;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+}
+
+.Models-Head-15-img {
+  width: 50vw;
+  height: 95vh;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/images/darktesla.jpg");
+}
+
+.Models-Head-15-txt {
+  padding-left: 35px;
+}
+
+.Models-Head-15-text-head {
+  display: flex;
+  flex-direction: row;
+}
+
+.Models-Head-15-txt-h1 {
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+}
+
+.Models-Head-15-txt-span {
+  font-size: 30px;
+  color: white;
+  padding-left: 5px;
+}
+
+.Models-Head-15-txt-btn {
+  display: flex;
+  flex-direction: row;
+  padding-top: 15px;
+}
+
+.Models-Head-15-txt-btn-1 {
+  font-size: 13px;
+  font-weight: 700;
+  color: rgba(253, 249, 249, 0.7);
+  padding: 3px 65px;
+  border: 3px solid rgba(240, 233, 233, 0.5);
+  border-radius: 25px;
+}
+
+.Models-Head-15-txt-btn-2 {
+  margin-left: 5px;
+  font-size: 13px;
+  font-weight: 700;
+  color: rgba(253, 249, 249, 0.7);
+  padding: 3px 85px;
+  border: 3px solid rgba(240, 233, 233, 0.5);
+  border-radius: 25px;
+}
+
+.Models-Head-15-txt-btn-1:hover {
+  color: white;
+  border: 3px solid white;
+  transition: all 0.2s ease-in-out;
+}
+
+
+.Models-Head-15-txt-btn-2:hover {
+  color: white;
+  border: 3px solid white;
+  transition: all 0.2s ease-in-out;
+}
+
+.Models-Head-15-txt-bt {
+  display: flex;
+  flex-direction: row;
+}
+
+.Models-Head-15-txt-bt-box {
+  padding-top: 20px;
+}
+
+.Models-Head-15-txt-bt1 {
+  
+}
+
+.Models-Head-15-txt-bt-2 {
+  padding-left: 38px;
+}
+
+.Models-Head-15-txt-bt-box-p1 {
+  width: 30px;
+  border-top: 1px solid rgba(252, 248, 248, 0.7);
+  padding-bottom: 15px;
+}
+.Models-Head-15-txt-bt-box-h1 {
+   
+}
+
+.Models-Head-15-txt-bt-box-h1 {
+  font-size: 15px;
+  color: rgba(240, 233, 233, 0.9);
+  font-weight: 700;
+}
+
+.Models-Head-15-txt-bt-box-p {
+  font-size: 14px;
+  color: rgba(240, 233, 233, 0.9);
+}
+
+
+.Models-Head-16 {
+  width: 100vw;
+  height: 80vh;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+}
+
+.Models-Head-16-text {
+  margin-left: 160px;
+} 
+
+.Models-Head-16-text-h1 {
+  font-size: 25px;
+  color: black;
+  font-weight: 500;
+  margin-top: 170px;
+}
+
+.Models-Head-16-text-bg {
+  margin-top: 30px;
+}
+
+.Models-Head-16-text-bg-bt {
+  padding: 8px 60px;
+  border: 3px solid black;
+  border-radius: 25px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.Models-Head-16-text-bg-bt:hover{
+  color: white;
+  background-color: black;
+}
+
+.Models-Head-16-text-bg-bt1 {
+  margin-left: 10px;
+  padding: 8px 70px;
+  border: 3px solid black;
+  border-radius: 25px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.Models-Head-16-text-bg-bt1:hover {
+  color: white;
+  background-color: black;
+} 
+
+.Models-Head-16-img {
+  margin-top: 95px;
+  margin-left: 160px;
+  width: 40vw;
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/images/whitetesla.jpg");
+}
+
+.footer-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footer-text-p {
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  margin-left: 15px;
+  cursor: pointer;
+  color: rgba(0,0,0,0.5);
+}
+
+.sidebarbuttom {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+.sidebarbuttomh1 {
+  font-size: 14px;
+  font-weight: 700;
+  padding-left: 5px;
+}
+
+.sidebarbuttomp {
+  font-size: 12px;
+  font-weight: 700;
+  margin-left: 5px;
+  border-bottom: 1px solid white;
+  width: 53px;
+}
+
+.sidebarbuttomp:hover{
+  transition: all 0.2s ease-in-out;
+  border-bottom: 1px solid rgba(0,0,0,0.5);
+}
+
